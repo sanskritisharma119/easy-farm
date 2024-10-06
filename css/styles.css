@@ -1,0 +1,146 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+div.login,
+div.home,
+div.main-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+}
+
+div.home {
+  width: 80%;
+}
+
+div.login img {
+  width: 70px;
+}
+
+.login img,
+.main-container img {
+  margin-bottom: 20px;
+}
+
+div.login p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  border: 1px solid black;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #f55296;
+  background-color: #fad0d0;
+}
+
+.button {
+  background-color: #05df1b;
+  border: 2px solid #10c021;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button.register {
+  background-color: #e9806c;
+  border: 2px solid #cb604b;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: #10c021;
+}
+
+.button.register:hover,
+.button.register:focus {
+  background-color: #cb604b;
+}
+
+div.home-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.home-items a {
+  color: black;
+  text-decoration: none;
+}
+
+div.home-item {
+  margin: auto 20px;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fbe4e4;
+  border-radius: 5px;
+  border: 2px solid #f55296;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+div.home-item:hover {
+  cursor: pointer;
+  background-color: #fad0d0;
+}
+
+div.home-item img,
+.main-container img {
+  width: 30px;
+}
+
+div.home-item p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+select#location {
+  outline: none;
+  border: 1px solid black;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button.logout {
+  background-color: #f02f5f;
+  border-color: #760000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
+.button.logout:hover,
+.button.logout:focus {
+  background-color: #760000;
+}
